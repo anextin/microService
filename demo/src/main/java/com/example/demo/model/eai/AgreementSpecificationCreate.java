@@ -16,7 +16,6 @@ package com.example.demo.model.eai;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.validation.annotation.Validated;
 
-import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -34,7 +33,7 @@ public class AgreementSpecificationCreate {
   private Boolean isBundle = null;
 
   @JsonProperty("lastUpdate")
-  private OffsetDateTime lastUpdate = null;
+  private String lastUpdate = null;
 
   @JsonProperty("lifecycleStatus")
   private String lifecycleStatus = null;
@@ -108,7 +107,7 @@ public class AgreementSpecificationCreate {
     this.isBundle = isBundle;
   }
 
-  public AgreementSpecificationCreate lastUpdate(OffsetDateTime lastUpdate) {
+  public AgreementSpecificationCreate lastUpdate(String lastUpdate) {
     this.lastUpdate = lastUpdate;
     return this;
   }
@@ -118,11 +117,11 @@ public class AgreementSpecificationCreate {
    * @return lastUpdate
   **/
   //@ApiModelProperty(value = "Date and time of the last update")
-  public OffsetDateTime getLastUpdate() {
+  public String getLastUpdate() {
     return lastUpdate;
   }
 
-  public void setLastUpdate(OffsetDateTime lastUpdate) {
+  public void setLastUpdate(String lastUpdate) {
     this.lastUpdate = lastUpdate;
   }
 

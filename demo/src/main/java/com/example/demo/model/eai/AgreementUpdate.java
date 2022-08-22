@@ -16,7 +16,6 @@ package com.example.demo.model.eai;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.validation.annotation.Validated;
 
-import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -37,7 +36,7 @@ public class AgreementUpdate {
   private Integer documentNumber = null;
 
   @JsonProperty("initialDate")
-  private OffsetDateTime initialDate = null;
+  private String initialDate = null;
 
   @JsonProperty("name")
   private String name = null;
@@ -135,7 +134,7 @@ public class AgreementUpdate {
     this.documentNumber = documentNumber;
   }
 
-  public AgreementUpdate initialDate(OffsetDateTime initialDate) {
+  public AgreementUpdate initialDate(String initialDate) {
     this.initialDate = initialDate;
     return this;
   }
@@ -145,11 +144,11 @@ public class AgreementUpdate {
    * @return initialDate
   **/
   //@ApiModelProperty(value = "Date at which the agreement was initialized")
-  public OffsetDateTime getInitialDate() {
+  public String getInitialDate() {
     return initialDate;
   }
 
-  public void setInitialDate(OffsetDateTime initialDate) {
+  public void setInitialDate(String initialDate) {
     this.initialDate = initialDate;
   }
 

@@ -16,7 +16,6 @@ package com.example.demo.model.eai;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.validation.annotation.Validated;
 
-import java.time.OffsetDateTime;
 import java.util.Objects;
 
 /**
@@ -26,12 +25,12 @@ import java.util.Objects;
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2022-08-22T11:43:31.605Z")
 public class TimePeriod {
   @JsonProperty("endDateTime")
-  private OffsetDateTime endDateTime = null;
+  private String endDateTime = null;
 
   @JsonProperty("startDateTime")
-  private OffsetDateTime startDateTime = null;
+  private String startDateTime = null;
 
-  public TimePeriod endDateTime(OffsetDateTime endDateTime) {
+  public TimePeriod endDateTime(String endDateTime) {
     this.endDateTime = endDateTime;
     return this;
   }
@@ -41,15 +40,15 @@ public class TimePeriod {
    * @return endDateTime
   **/
   //@ApiModelProperty(value = "End of the time period, using IETC-RFC-3339 format")
-  public OffsetDateTime getEndDateTime() {
+  public String getEndDateTime() {
     return endDateTime;
   }
 
-  public void setEndDateTime(OffsetDateTime endDateTime) {
+  public void setEndDateTime(String endDateTime) {
     this.endDateTime = endDateTime;
   }
 
-  public TimePeriod startDateTime(OffsetDateTime startDateTime) {
+  public TimePeriod startDateTime(String startDateTime) {
     this.startDateTime = startDateTime;
     return this;
   }
@@ -59,11 +58,11 @@ public class TimePeriod {
    * @return startDateTime
   **/
   //@ApiModelProperty(value = "Start of the time period, using IETC-RFC-3339 format. If you define a start, you must also define an end")
-  public OffsetDateTime getStartDateTime() {
+  public String getStartDateTime() {
     return startDateTime;
   }
 
-  public void setStartDateTime(OffsetDateTime startDateTime) {
+  public void setStartDateTime(String startDateTime) {
     this.startDateTime = startDateTime;
   }
 

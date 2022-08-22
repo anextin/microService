@@ -16,7 +16,6 @@ package com.example.demo.model.eai;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.validation.annotation.Validated;
 
-import java.time.OffsetDateTime;
 import java.util.Objects;
 
 /**
@@ -26,7 +25,7 @@ import java.util.Objects;
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2022-08-22T11:43:31.605Z")
 public class AgreementAuthorization {
   @JsonProperty("date")
-  private OffsetDateTime date = null;
+  private String date = null;
 
   @JsonProperty("signatureRepresentation")
   private String signatureRepresentation = null;
@@ -43,7 +42,7 @@ public class AgreementAuthorization {
   @JsonProperty("@type")
   private String type = null;
 
-  public AgreementAuthorization date(OffsetDateTime date) {
+  public AgreementAuthorization date(String date) {
     this.date = date;
     return this;
   }
@@ -53,11 +52,11 @@ public class AgreementAuthorization {
    * @return date
   **/
   //@ApiModelProperty(value = "The date associated with the authorization state.")
-  public OffsetDateTime getDate() {
+  public String getDate() {
     return date;
   }
 
-  public void setDate(OffsetDateTime date) {
+  public void setDate(String date) {
     this.date = date;
   }
 

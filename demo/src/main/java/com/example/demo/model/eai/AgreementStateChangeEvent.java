@@ -16,7 +16,6 @@ package com.example.demo.model.eai;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.validation.annotation.Validated;
 
-import java.time.OffsetDateTime;
 import java.util.Objects;
 
 /**
@@ -35,7 +34,7 @@ public class AgreementStateChangeEvent {
   private String eventId = null;
 
   @JsonProperty("eventTime")
-  private OffsetDateTime eventTime = null;
+  private String eventTime = null;
 
   @JsonProperty("eventType")
   private String eventType = null;
@@ -56,7 +55,7 @@ public class AgreementStateChangeEvent {
   private String priority = null;
 
   @JsonProperty("timeOcurred")
-  private OffsetDateTime timeOcurred = null;
+  private String timeOcurred = null;
 
   @JsonProperty("event")
   private AgreementStateChangeEventPayload event = null;
@@ -115,7 +114,7 @@ public class AgreementStateChangeEvent {
     this.eventId = eventId;
   }
 
-  public AgreementStateChangeEvent eventTime(OffsetDateTime eventTime) {
+  public AgreementStateChangeEvent eventTime(String eventTime) {
     this.eventTime = eventTime;
     return this;
   }
@@ -125,11 +124,11 @@ public class AgreementStateChangeEvent {
    * @return eventTime
   **/
   //@ApiModelProperty(value = "Time of the event occurrence.")
-  public OffsetDateTime getEventTime() {
+  public String getEventTime() {
     return eventTime;
   }
 
-  public void setEventTime(OffsetDateTime eventTime) {
+  public void setEventTime(String eventTime) {
     this.eventTime = eventTime;
   }
 
@@ -241,7 +240,7 @@ public class AgreementStateChangeEvent {
     this.priority = priority;
   }
 
-  public AgreementStateChangeEvent timeOcurred(OffsetDateTime timeOcurred) {
+  public AgreementStateChangeEvent timeOcurred(String timeOcurred) {
     this.timeOcurred = timeOcurred;
     return this;
   }
@@ -251,11 +250,11 @@ public class AgreementStateChangeEvent {
    * @return timeOcurred
   **/
   //@ApiModelProperty(value = "The time the event occured.")
-  public OffsetDateTime getTimeOcurred() {
+  public String getTimeOcurred() {
     return timeOcurred;
   }
 
-  public void setTimeOcurred(OffsetDateTime timeOcurred) {
+  public void setTimeOcurred(String timeOcurred) {
     this.timeOcurred = timeOcurred;
   }
 

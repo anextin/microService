@@ -21,6 +21,8 @@ import java.util.Arrays;
  */
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2022-08-22T11:43:31.605Z")
 public class Any {
+  public Any() {
+  }
 
   @Override
   public boolean equals(Object o) {
