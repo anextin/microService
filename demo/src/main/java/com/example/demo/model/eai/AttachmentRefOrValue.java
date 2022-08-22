@@ -75,7 +75,7 @@ public class AttachmentRefOrValue {
    * Unique identifier for this particular attachment
    * @return id
   **/
-  //@ApiModelProperty(value = "Unique identifier for this particular attachment")
+  @ApiModelProperty(value = "Unique identifier for this particular attachment")
   public String getId() {
     return id;
   }
@@ -93,7 +93,7 @@ public class AttachmentRefOrValue {
    * URI for this Attachment
    * @return href
   **/
-  //@ApiModelProperty(value = "URI for this Attachment")
+  @ApiModelProperty(value = "URI for this Attachment")
   public String getHref() {
     return href;
   }
@@ -111,7 +111,7 @@ public class AttachmentRefOrValue {
    * Attachment type such as video, picture
    * @return attachmentType
   **/
-  //@ApiModelProperty(value = "Attachment type such as video, picture")
+  @ApiModelProperty(value = "Attachment type such as video, picture")
   public String getAttachmentType() {
     return attachmentType;
   }
@@ -129,7 +129,7 @@ public class AttachmentRefOrValue {
    * The actual contents of the attachment object, if embedded, encoded as base64
    * @return content
   **/
-  //@ApiModelProperty(value = "The actual contents of the attachment object, if embedded, encoded as base64")
+  @ApiModelProperty(value = "The actual contents of the attachment object, if embedded, encoded as base64")
   public String getContent() {
     return content;
   }
@@ -147,7 +147,7 @@ public class AttachmentRefOrValue {
    * A narrative text describing the content of the attachment
    * @return description
   **/
-  //@ApiModelProperty(value = "A narrative text describing the content of the attachment")
+  @ApiModelProperty(value = "A narrative text describing the content of the attachment")
   public String getDescription() {
     return description;
   }
@@ -165,7 +165,7 @@ public class AttachmentRefOrValue {
    * Attachment mime type such as extension file for video, picture and document
    * @return mimeType
   **/
-  //@ApiModelProperty(value = "Attachment mime type such as extension file for video, picture and document")
+  @ApiModelProperty(value = "Attachment mime type such as extension file for video, picture and document")
   public String getMimeType() {
     return mimeType;
   }
@@ -183,7 +183,7 @@ public class AttachmentRefOrValue {
    * The name of the attachment
    * @return name
   **/
-  //@ApiModelProperty(value = "The name of the attachment")
+  @ApiModelProperty(value = "The name of the attachment")
   public String getName() {
     return name;
   }
@@ -201,7 +201,7 @@ public class AttachmentRefOrValue {
    * Uniform Resource Locator, is a web page address (a subset of URI)
    * @return url
   **/
-  //@ApiModelProperty(value = "Uniform Resource Locator, is a web page address (a subset of URI)")
+  @ApiModelProperty(value = "Uniform Resource Locator, is a web page address (a subset of URI)")
   public String getUrl() {
     return url;
   }
@@ -219,7 +219,7 @@ public class AttachmentRefOrValue {
    * The size of the attachment.
    * @return size
   **/
-  //@ApiModelProperty(value = "The size of the attachment.")
+  @ApiModelProperty(value = "The size of the attachment.")
   public Quantity getSize() {
     return size;
   }
@@ -237,7 +237,7 @@ public class AttachmentRefOrValue {
    * The period of time for which the attachment is valid
    * @return validFor
   **/
-  //@ApiModelProperty(value = "The period of time for which the attachment is valid")
+  @ApiModelProperty(value = "The period of time for which the attachment is valid")
   public TimePeriod getValidFor() {
     return validFor;
   }
@@ -255,7 +255,7 @@ public class AttachmentRefOrValue {
    * When sub-classing, this defines the super-class
    * @return baseType
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the super-class")
+  @ApiModelProperty(value = "When sub-classing, this defines the super-class")
   public String getBaseType() {
     return baseType;
   }
@@ -273,7 +273,7 @@ public class AttachmentRefOrValue {
    * A URI to a JSON-Schema file that defines additional attributes and relationships
    * @return schemaLocation
   **/
-  //@ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
+  @ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
   public String getSchemaLocation() {
     return schemaLocation;
   }
@@ -291,7 +291,7 @@ public class AttachmentRefOrValue {
    * When sub-classing, this defines the sub-class entity name
    * @return type
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
+  @ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
   public String getType() {
     return type;
   }
@@ -309,7 +309,7 @@ public class AttachmentRefOrValue {
    * The actual type of the target instance when needed for disambiguation.
    * @return referredType
   **/
-  //@ApiModelProperty(value = "The actual type of the target instance when needed for disambiguation.")
+  @ApiModelProperty(value = "The actual type of the target instance when needed for disambiguation.")
   public String getReferredType() {
     return referredType;
   }

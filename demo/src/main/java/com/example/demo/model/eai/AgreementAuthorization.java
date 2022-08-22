@@ -16,6 +16,7 @@ package com.example.demo.model.eai;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.validation.annotation.Validated;
 
+import java.time.OffsetDateTime;
 import java.util.Objects;
 
 /**
@@ -25,7 +26,7 @@ import java.util.Objects;
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2022-08-22T11:43:31.605Z")
 public class AgreementAuthorization {
   @JsonProperty("date")
-  private String date = null;
+  private OffsetDateTime date = null;
 
   @JsonProperty("signatureRepresentation")
   private String signatureRepresentation = null;
@@ -42,7 +43,7 @@ public class AgreementAuthorization {
   @JsonProperty("@type")
   private String type = null;
 
-  public AgreementAuthorization date(String date) {
+  public AgreementAuthorization date(OffsetDateTime date) {
     this.date = date;
     return this;
   }
@@ -51,12 +52,12 @@ public class AgreementAuthorization {
    * The date associated with the authorization state.
    * @return date
   **/
-  //@ApiModelProperty(value = "The date associated with the authorization state.")
-  public String getDate() {
+  @ApiModelProperty(value = "The date associated with the authorization state.")
+  public OffsetDateTime getDate() {
     return date;
   }
 
-  public void setDate(String date) {
+  public void setDate(OffsetDateTime date) {
     this.date = date;
   }
 
@@ -69,7 +70,7 @@ public class AgreementAuthorization {
    * Indication that represents whether the signature is a physical paper signature or a digital signature.
    * @return signatureRepresentation
   **/
-  //@ApiModelProperty(value = "Indication that represents whether the signature is a physical paper signature or a digital signature.")
+  @ApiModelProperty(value = "Indication that represents whether the signature is a physical paper signature or a digital signature.")
   public String getSignatureRepresentation() {
     return signatureRepresentation;
   }
@@ -87,7 +88,7 @@ public class AgreementAuthorization {
    * Current status of the authorization, for example in process, approved, rejected.
    * @return state
   **/
-  //@ApiModelProperty(value = "Current status of the authorization, for example in process, approved, rejected.")
+  @ApiModelProperty(value = "Current status of the authorization, for example in process, approved, rejected.")
   public String getState() {
     return state;
   }
@@ -105,7 +106,7 @@ public class AgreementAuthorization {
    * When sub-classing, this defines the super-class
    * @return baseType
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the super-class")
+  @ApiModelProperty(value = "When sub-classing, this defines the super-class")
   public String getBaseType() {
     return baseType;
   }
@@ -123,7 +124,7 @@ public class AgreementAuthorization {
    * A URI to a JSON-Schema file that defines additional attributes and relationships
    * @return schemaLocation
   **/
-  //@ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
+  @ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
   public String getSchemaLocation() {
     return schemaLocation;
   }
@@ -141,7 +142,7 @@ public class AgreementAuthorization {
    * When sub-classing, this defines the sub-class entity name
    * @return type
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
+  @ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
   public String getType() {
     return type;
   }

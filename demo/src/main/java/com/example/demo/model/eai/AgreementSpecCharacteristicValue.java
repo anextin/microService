@@ -63,7 +63,7 @@ public class AgreementSpecCharacteristicValue {
    * Indicates if the value is the default value for a characteristic
    * @return _default
   **/
-  //@ApiModelProperty(value = "Indicates if the value is the default value for a characteristic")
+  @ApiModelProperty(value = "Indicates if the value is the default value for a characteristic")
   public Boolean isDefault() {
     return _default;
   }
@@ -81,7 +81,7 @@ public class AgreementSpecCharacteristicValue {
    * Unit of measure for the characteristic, such as minutes, gigabytes (GB) and so on.
    * @return unitOfMeasure
   **/
-  //@ApiModelProperty(value = "Unit of measure for the characteristic, such as minutes, gigabytes (GB) and so on.")
+  @ApiModelProperty(value = "Unit of measure for the characteristic, such as minutes, gigabytes (GB) and so on.")
   public String getUnitOfMeasure() {
     return unitOfMeasure;
   }
@@ -99,7 +99,7 @@ public class AgreementSpecCharacteristicValue {
    * The low range value that a characteristic can take on
    * @return valueFrom
   **/
-  //@ApiModelProperty(value = "The low range value that a characteristic can take on")
+  @ApiModelProperty(value = "The low range value that a characteristic can take on")
   public String getValueFrom() {
     return valueFrom;
   }
@@ -117,7 +117,7 @@ public class AgreementSpecCharacteristicValue {
    * The upper range value that a characteristic can take on
    * @return valueTo
   **/
-  //@ApiModelProperty(value = "The upper range value that a characteristic can take on")
+  @ApiModelProperty(value = "The upper range value that a characteristic can take on")
   public String getValueTo() {
     return valueTo;
   }
@@ -135,7 +135,7 @@ public class AgreementSpecCharacteristicValue {
    * A kind of value that the characteristic can take on, such as numeric, text, and so forth
    * @return valueType
   **/
-  //@ApiModelProperty(value = "A kind of value that the characteristic can take on, such as numeric, text, and so forth")
+  @ApiModelProperty(value = "A kind of value that the characteristic can take on, such as numeric, text, and so forth")
   public String getValueType() {
     return valueType;
   }
@@ -153,7 +153,7 @@ public class AgreementSpecCharacteristicValue {
    * The period of time for which a value is applicable
    * @return validFor
   **/
-  //@ApiModelProperty(value = "The period of time for which a value is applicable")
+  @ApiModelProperty(value = "The period of time for which a value is applicable")
   public TimePeriod getValidFor() {
     return validFor;
   }
@@ -171,7 +171,7 @@ public class AgreementSpecCharacteristicValue {
    * A discrete value that the characteristic can take on
    * @return value
   **/
-  //@ApiModelProperty(value = "A discrete value that the characteristic can take on")
+  @ApiModelProperty(value = "A discrete value that the characteristic can take on")
   public Any getValue() {
     return value;
   }
@@ -189,7 +189,7 @@ public class AgreementSpecCharacteristicValue {
    * When sub-classing, this defines the super-class
    * @return baseType
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the super-class")
+  @ApiModelProperty(value = "When sub-classing, this defines the super-class")
   public String getBaseType() {
     return baseType;
   }
@@ -207,7 +207,7 @@ public class AgreementSpecCharacteristicValue {
    * A URI to a JSON-Schema file that defines additional attributes and relationships
    * @return schemaLocation
   **/
-  //@ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
+  @ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
   public String getSchemaLocation() {
     return schemaLocation;
   }
@@ -225,7 +225,7 @@ public class AgreementSpecCharacteristicValue {
    * When sub-classing, this defines the sub-class entity name
    * @return type
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
+  @ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
   public String getType() {
     return type;
   }

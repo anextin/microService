@@ -13,16 +13,17 @@
 
 package com.example.demo.model.eai;
 
+import org.springframework.validation.annotation.Validated;
+
 import java.util.Objects;
 import java.util.Arrays;
 
 /**
  * Any
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2022-08-22T11:43:31.605Z")
+@Validated
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2022-08-22T11:43:31.605Z")
 public class Any {
-  public Any() {
-  }
 
   @Override
   public boolean equals(Object o) {

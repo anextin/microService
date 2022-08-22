@@ -51,7 +51,7 @@ public class AgreementTermOrCondition {
    * Unique number assigned for reference.
    * @return id
   **/
-  //@ApiModelProperty(value = "Unique number assigned for reference.")
+  @ApiModelProperty(value = "Unique number assigned for reference.")
   public String getId() {
     return id;
   }
@@ -69,7 +69,7 @@ public class AgreementTermOrCondition {
    * Text that explains the term or condition of the agreement.
    * @return description
   **/
-  //@ApiModelProperty(value = "Text that explains the term or condition of the agreement.")
+  @ApiModelProperty(value = "Text that explains the term or condition of the agreement.")
   public String getDescription() {
     return description;
   }
@@ -87,7 +87,7 @@ public class AgreementTermOrCondition {
    * The period of time during which the term or condition of the agreement applies.
    * @return validFor
   **/
-  //@ApiModelProperty(value = "The period of time during which the term or condition of the agreement applies.")
+  @ApiModelProperty(value = "The period of time during which the term or condition of the agreement applies.")
   public TimePeriod getValidFor() {
     return validFor;
   }
@@ -105,7 +105,7 @@ public class AgreementTermOrCondition {
    * When sub-classing, this defines the super-class
    * @return baseType
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the super-class")
+  @ApiModelProperty(value = "When sub-classing, this defines the super-class")
   public String getBaseType() {
     return baseType;
   }
@@ -123,7 +123,7 @@ public class AgreementTermOrCondition {
    * A URI to a JSON-Schema file that defines additional attributes and relationships
    * @return schemaLocation
   **/
-  //@ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
+  @ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
   public String getSchemaLocation() {
     return schemaLocation;
   }
@@ -141,7 +141,7 @@ public class AgreementTermOrCondition {
    * When sub-classing, this defines the sub-class entity name
    * @return type
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
+  @ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
   public String getType() {
     return type;
   }

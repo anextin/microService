@@ -57,7 +57,7 @@ public class RelatedParty {
    * Unique identifier of a related entity.
    * @return id
   **/
-  //@ApiModelProperty(required = true, value = "Unique identifier of a related entity.")
+  @ApiModelProperty(required = true, value = "Unique identifier of a related entity.")
   public String getId() {
     return id;
   }
@@ -75,7 +75,7 @@ public class RelatedParty {
    * Reference of the related entity.
    * @return href
   **/
-  //@ApiModelProperty(value = "Reference of the related entity.")
+  @ApiModelProperty(value = "Reference of the related entity.")
   public String getHref() {
     return href;
   }
@@ -93,7 +93,7 @@ public class RelatedParty {
    * Name of the related entity.
    * @return name
   **/
-  //@ApiModelProperty(required = true, value = "Name of the related entity.")
+  @ApiModelProperty(required = true, value = "Name of the related entity.")
   public String getName() {
     return name;
   }
@@ -111,7 +111,7 @@ public class RelatedParty {
    * Role played by the related party
    * @return role
   **/
-  //@ApiModelProperty(value = "Role played by the related party")
+  @ApiModelProperty(value = "Role played by the related party")
   public String getRole() {
     return role;
   }
@@ -129,7 +129,7 @@ public class RelatedParty {
    * When sub-classing, this defines the super-class
    * @return baseType
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the super-class")
+  @ApiModelProperty(value = "When sub-classing, this defines the super-class")
   public String getBaseType() {
     return baseType;
   }
@@ -147,7 +147,7 @@ public class RelatedParty {
    * A URI to a JSON-Schema file that defines additional attributes and relationships
    * @return schemaLocation
   **/
-  //@ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
+  @ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
   public String getSchemaLocation() {
     return schemaLocation;
   }
@@ -165,7 +165,7 @@ public class RelatedParty {
    * When sub-classing, this defines the sub-class entity name
    * @return type
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
+  @ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
   public String getType() {
     return type;
   }
@@ -183,7 +183,7 @@ public class RelatedParty {
    * The actual type of the target instance when needed for disambiguation.
    * @return referredType
   **/
-  //@ApiModelProperty(required = true, value = "The actual type of the target instance when needed for disambiguation.")
+  @ApiModelProperty(required = true, value = "The actual type of the target instance when needed for disambiguation.")
   public String getReferredType() {
     return referredType;
   }

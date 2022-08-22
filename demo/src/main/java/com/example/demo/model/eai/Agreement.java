@@ -16,6 +16,7 @@ package com.example.demo.model.eai;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.validation.annotation.Validated;
 
+import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -24,8 +25,7 @@ import java.util.Objects;
  * An agreement represents a contract or arrangement, either written or verbal and sometimes enforceable by law, such as a service level agreement or a customer price agreement. An agreement involves a number of other business entities, such as products, services, and resources and/or their specifications.
  */
 @Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2022-08-22T11:43:31.605Z")
-public class Agreement {
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2022-08-22T11:43:31.605Z")public class Agreement {
   @JsonProperty("id")
   private String id = null;
 
@@ -42,7 +42,7 @@ public class Agreement {
   private Integer documentNumber = null;
 
   @JsonProperty("initialDate")
-  private String initialDate = null;
+  private OffsetDateTime initialDate = null;
 
   @JsonProperty("name")
   private String name = null;
@@ -98,6 +98,7 @@ public class Agreement {
    * Unique identifier for the agreement
    * @return id
   **/
+  @ApiModelProperty(value = "Unique identifier for the agreement")
   public String getId() {
     return id;
   }
@@ -115,6 +116,7 @@ public class Agreement {
    * Unique url identifying the agreement as a resource
    * @return href
   **/
+  @ApiModelProperty(value = "Unique url identifying the agreement as a resource")
   public String getHref() {
     return href;
   }
@@ -132,6 +134,7 @@ public class Agreement {
    * The type of the agreement. For example commercial
    * @return agreementType
   **/
+  @ApiModelProperty(required = true, value = "The type of the agreement. For example commercial")
   public String getAgreementType() {
     return agreementType;
   }
@@ -149,6 +152,7 @@ public class Agreement {
    * Narrative that explains the agreement and details about the it , such as why the agreement is taking place.
    * @return description
   **/
+  @ApiModelProperty(value = "Narrative that explains the agreement and details about the it , such as why the agreement is taking place.")
   public String getDescription() {
     return description;
   }
@@ -166,6 +170,7 @@ public class Agreement {
    * A reference number assigned to an Agreement that follows a prescribed numbering system.
    * @return documentNumber
   **/
+  @ApiModelProperty(value = "A reference number assigned to an Agreement that follows a prescribed numbering system.")
   public Integer getDocumentNumber() {
     return documentNumber;
   }
@@ -174,7 +179,7 @@ public class Agreement {
     this.documentNumber = documentNumber;
   }
 
-  public Agreement initialDate(String initialDate) {
+  public Agreement initialDate(OffsetDateTime initialDate) {
     this.initialDate = initialDate;
     return this;
   }
@@ -183,11 +188,12 @@ public class Agreement {
    * Date at which the agreement was initialized
    * @return initialDate
   **/
-  public String getInitialDate() {
+  @ApiModelProperty(value = "Date at which the agreement was initialized")
+  public OffsetDateTime getInitialDate() {
     return initialDate;
   }
 
-  public void setInitialDate(String initialDate) {
+  public void setInitialDate(OffsetDateTime initialDate) {
     this.initialDate = initialDate;
   }
 
@@ -200,6 +206,7 @@ public class Agreement {
    * A human-readable name for the agreement
    * @return name
   **/
+  @ApiModelProperty(required = true, value = "A human-readable name for the agreement")
   public String getName() {
     return name;
   }
@@ -217,6 +224,7 @@ public class Agreement {
    * An overview and goals of the Agreement
    * @return statementOfIntent
   **/
+  @ApiModelProperty(value = "An overview and goals of the Agreement")
   public String getStatementOfIntent() {
     return statementOfIntent;
   }
@@ -234,6 +242,7 @@ public class Agreement {
    * The current status of the agreement. Typical values are: in process, approved and rejected
    * @return status
   **/
+  @ApiModelProperty(value = "The current status of the agreement. Typical values are: in process, approved and rejected")
   public String getStatus() {
     return status;
   }
@@ -251,6 +260,7 @@ public class Agreement {
    * A string identifying the version of the agreement
    * @return version
   **/
+  @ApiModelProperty(value = "A string identifying the version of the agreement")
   public String getVersion() {
     return version;
   }
@@ -276,6 +286,7 @@ public class Agreement {
    * Get agreementAuthorization
    * @return agreementAuthorization
   **/
+  @ApiModelProperty(value = "")
   public List<AgreementAuthorization> getAgreementAuthorization() {
     return agreementAuthorization;
   }
@@ -298,6 +309,7 @@ public class Agreement {
    * Get agreementItem
    * @return agreementItem
   **/
+  @ApiModelProperty(required = true, value = "")
   public List<AgreementItem> getAgreementItem() {
     return agreementItem;
   }
@@ -315,6 +327,7 @@ public class Agreement {
    * The time period during which the Agreement is in effect.
    * @return agreementPeriod
   **/
+  @ApiModelProperty(value = "The time period during which the Agreement is in effect.")
   public TimePeriod getAgreementPeriod() {
     return agreementPeriod;
   }
@@ -332,6 +345,7 @@ public class Agreement {
    * Get agreementSpecification
    * @return agreementSpecification
   **/
+  @ApiModelProperty(value = "")
   public AgreementSpecificationRef getAgreementSpecification() {
     return agreementSpecification;
   }
@@ -357,6 +371,7 @@ public class Agreement {
    * Get associatedAgreement
    * @return associatedAgreement
   **/
+  @ApiModelProperty(value = "")
   public List<AgreementRef> getAssociatedAgreement() {
     return associatedAgreement;
   }
@@ -382,6 +397,7 @@ public class Agreement {
    * Get characteristic
    * @return characteristic
   **/
+  @ApiModelProperty(value = "")
   public List<Characteristic> getCharacteristic() {
     return characteristic;
   }
@@ -399,6 +415,7 @@ public class Agreement {
    * Date at which the agreement is completed
    * @return completionDate
   **/
+  @ApiModelProperty(value = "Date at which the agreement is completed")
   public TimePeriod getCompletionDate() {
     return completionDate;
   }
@@ -421,6 +438,7 @@ public class Agreement {
    * Get engagedParty
    * @return engagedParty
   **/
+  @ApiModelProperty(required = true, value = "")
   public List<RelatedParty> getEngagedParty() {
     return engagedParty;
   }
@@ -438,6 +456,7 @@ public class Agreement {
    * When sub-classing, this defines the super-class
    * @return baseType
   **/
+  @ApiModelProperty(value = "When sub-classing, this defines the super-class")
   public String getBaseType() {
     return baseType;
   }
@@ -455,6 +474,7 @@ public class Agreement {
    * A URI to a JSON-Schema file that defines additional attributes and relationships
    * @return schemaLocation
   **/
+  @ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
   public String getSchemaLocation() {
     return schemaLocation;
   }
@@ -472,6 +492,7 @@ public class Agreement {
    * When sub-classing, this defines the sub-class entity name
    * @return type
   **/
+  @ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
   public String getType() {
     return type;
   }

@@ -36,7 +36,7 @@ public class AgreementSpecificationDeleteEventPayload {
    * The involved resource data for the event
    * @return agreementSpecification
   **/
-  //@ApiModelProperty(value = "The involved resource data for the event")
+  @ApiModelProperty(value = "The involved resource data for the event")
   public AgreementSpecification getAgreementSpecification() {
     return agreementSpecification;
   }

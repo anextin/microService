@@ -61,7 +61,7 @@ public class AgreementItem {
    * The list of products indirectly referred by this agreement item (since an agreement item refers primarily to product offerings)
    * @return product
   **/
-  //@ApiModelProperty(value = "The list of products indirectly referred by this agreement item (since an agreement item refers primarily to product offerings)")
+  @ApiModelProperty(value = "The list of products indirectly referred by this agreement item (since an agreement item refers primarily to product offerings)")
   public List<ProductRef> getProduct() {
     return product;
   }
@@ -87,7 +87,7 @@ public class AgreementItem {
    * The list of product offerings referred by this agreement item
    * @return productOffering
   **/
-  //@ApiModelProperty(value = "The list of product offerings referred by this agreement item")
+  @ApiModelProperty(value = "The list of product offerings referred by this agreement item")
   public List<ProductOfferingRef> getProductOffering() {
     return productOffering;
   }
@@ -113,7 +113,7 @@ public class AgreementItem {
    * Get termOrCondition
    * @return termOrCondition
   **/
-  //@ApiModelProperty(value = "")
+  @ApiModelProperty(value = "")
   public List<AgreementTermOrCondition> getTermOrCondition() {
     return termOrCondition;
   }
@@ -131,7 +131,7 @@ public class AgreementItem {
    * When sub-classing, this defines the super-class
    * @return baseType
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the super-class")
+  @ApiModelProperty(value = "When sub-classing, this defines the super-class")
   public String getBaseType() {
     return baseType;
   }
@@ -149,7 +149,7 @@ public class AgreementItem {
    * A URI to a JSON-Schema file that defines additional attributes and relationships
    * @return schemaLocation
   **/
-  //@ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
+  @ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
   public String getSchemaLocation() {
     return schemaLocation;
   }
@@ -167,7 +167,7 @@ public class AgreementItem {
    * When sub-classing, this defines the sub-class entity name
    * @return type
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
+  @ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
   public String getType() {
     return type;
   }

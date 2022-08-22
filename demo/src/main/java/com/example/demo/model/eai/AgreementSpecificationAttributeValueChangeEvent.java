@@ -16,6 +16,7 @@ package com.example.demo.model.eai;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.validation.annotation.Validated;
 
+import java.time.OffsetDateTime;
 import java.util.Objects;
 
 /**
@@ -28,7 +29,7 @@ public class AgreementSpecificationAttributeValueChangeEvent {
   private String eventId = null;
 
   @JsonProperty("eventTime")
-  private String eventTime = null;
+  private OffsetDateTime eventTime = null;
 
   @JsonProperty("eventType")
   private String eventType = null;
@@ -49,7 +50,7 @@ public class AgreementSpecificationAttributeValueChangeEvent {
   private String priority = null;
 
   @JsonProperty("timeOcurred")
-  private String timeOcurred = null;
+  private OffsetDateTime timeOcurred = null;
 
   @JsonProperty("fieldPath")
   private String fieldPath = null;
@@ -66,7 +67,7 @@ public class AgreementSpecificationAttributeValueChangeEvent {
    * The identifier of the notification.
    * @return eventId
   **/
-  //@ApiModelProperty(value = "The identifier of the notification.")
+  @ApiModelProperty(value = "The identifier of the notification.")
   public String getEventId() {
     return eventId;
   }
@@ -75,7 +76,7 @@ public class AgreementSpecificationAttributeValueChangeEvent {
     this.eventId = eventId;
   }
 
-  public AgreementSpecificationAttributeValueChangeEvent eventTime(String eventTime) {
+  public AgreementSpecificationAttributeValueChangeEvent eventTime(OffsetDateTime eventTime) {
     this.eventTime = eventTime;
     return this;
   }
@@ -84,12 +85,12 @@ public class AgreementSpecificationAttributeValueChangeEvent {
    * Time of the event occurrence.
    * @return eventTime
   **/
-  //@ApiModelProperty(value = "Time of the event occurrence.")
-  public String getEventTime() {
+  @ApiModelProperty(value = "Time of the event occurrence.")
+  public OffsetDateTime getEventTime() {
     return eventTime;
   }
 
-  public void setEventTime(String eventTime) {
+  public void setEventTime(OffsetDateTime eventTime) {
     this.eventTime = eventTime;
   }
 
@@ -102,7 +103,7 @@ public class AgreementSpecificationAttributeValueChangeEvent {
    * The type of the notification.
    * @return eventType
   **/
-  //@ApiModelProperty(value = "The type of the notification.")
+  @ApiModelProperty(value = "The type of the notification.")
   public String getEventType() {
     return eventType;
   }
@@ -120,7 +121,7 @@ public class AgreementSpecificationAttributeValueChangeEvent {
    * The correlation id for this event.
    * @return correlationId
   **/
-  //@ApiModelProperty(value = "The correlation id for this event.")
+  @ApiModelProperty(value = "The correlation id for this event.")
   public String getCorrelationId() {
     return correlationId;
   }
@@ -138,7 +139,7 @@ public class AgreementSpecificationAttributeValueChangeEvent {
    * The domain of the event.
    * @return domain
   **/
-  //@ApiModelProperty(value = "The domain of the event.")
+  @ApiModelProperty(value = "The domain of the event.")
   public String getDomain() {
     return domain;
   }
@@ -156,7 +157,7 @@ public class AgreementSpecificationAttributeValueChangeEvent {
    * The title of the event.
    * @return title
   **/
-  //@ApiModelProperty(value = "The title of the event.")
+  @ApiModelProperty(value = "The title of the event.")
   public String getTitle() {
     return title;
   }
@@ -174,7 +175,7 @@ public class AgreementSpecificationAttributeValueChangeEvent {
    * An explanatory of the event.
    * @return description
   **/
-  //@ApiModelProperty(value = "An explanatory of the event.")
+  @ApiModelProperty(value = "An explanatory of the event.")
   public String getDescription() {
     return description;
   }
@@ -192,7 +193,7 @@ public class AgreementSpecificationAttributeValueChangeEvent {
    * A priority.
    * @return priority
   **/
-  //@ApiModelProperty(value = "A priority.")
+  @ApiModelProperty(value = "A priority.")
   public String getPriority() {
     return priority;
   }
@@ -201,7 +202,7 @@ public class AgreementSpecificationAttributeValueChangeEvent {
     this.priority = priority;
   }
 
-  public AgreementSpecificationAttributeValueChangeEvent timeOcurred(String timeOcurred) {
+  public AgreementSpecificationAttributeValueChangeEvent timeOcurred(OffsetDateTime timeOcurred) {
     this.timeOcurred = timeOcurred;
     return this;
   }
@@ -210,12 +211,12 @@ public class AgreementSpecificationAttributeValueChangeEvent {
    * The time the event occured.
    * @return timeOcurred
   **/
-  //@ApiModelProperty(value = "The time the event occured.")
-  public String getTimeOcurred() {
+  @ApiModelProperty(value = "The time the event occured.")
+  public OffsetDateTime getTimeOcurred() {
     return timeOcurred;
   }
 
-  public void setTimeOcurred(String timeOcurred) {
+  public void setTimeOcurred(OffsetDateTime timeOcurred) {
     this.timeOcurred = timeOcurred;
   }
 
@@ -228,7 +229,7 @@ public class AgreementSpecificationAttributeValueChangeEvent {
    * The path identifying the object field concerned by this notification.
    * @return fieldPath
   **/
-  //@ApiModelProperty(value = "The path identifying the object field concerned by this notification.")
+  @ApiModelProperty(value = "The path identifying the object field concerned by this notification.")
   public String getFieldPath() {
     return fieldPath;
   }
@@ -246,7 +247,7 @@ public class AgreementSpecificationAttributeValueChangeEvent {
    * The event payload linked to the involved resource object
    * @return event
   **/
-  //@ApiModelProperty(value = "The event payload linked to the involved resource object")
+  @ApiModelProperty(value = "The event payload linked to the involved resource object")
   public AgreementSpecificationAttributeValueChangeEventPayload getEvent() {
     return event;
   }

@@ -16,6 +16,7 @@ package com.example.demo.model.eai;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.validation.annotation.Validated;
 
+import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -39,7 +40,7 @@ public class AgreementSpecification {
   private Boolean isBundle = null;
 
   @JsonProperty("lastUpdate")
-  private String lastUpdate = null;
+  private OffsetDateTime lastUpdate = null;
 
   @JsonProperty("lifecycleStatus")
   private String lifecycleStatus = null;
@@ -86,7 +87,7 @@ public class AgreementSpecification {
    * Unique identifier of the agreement specification
    * @return id
   **/
-  //@ApiModelProperty(value = "Unique identifier of the agreement specification")
+  @ApiModelProperty(value = "Unique identifier of the agreement specification")
   public String getId() {
     return id;
   }
@@ -104,7 +105,7 @@ public class AgreementSpecification {
    * Reference of the agreement specification
    * @return href
   **/
-  //@ApiModelProperty(value = "Reference of the agreement specification")
+  @ApiModelProperty(value = "Reference of the agreement specification")
   public String getHref() {
     return href;
   }
@@ -122,7 +123,7 @@ public class AgreementSpecification {
    * A narrative that explains in detail what the agreement specification is about
    * @return description
   **/
-  //@ApiModelProperty(value = "A narrative that explains in detail what the agreement specification is about")
+  @ApiModelProperty(value = "A narrative that explains in detail what the agreement specification is about")
   public String getDescription() {
     return description;
   }
@@ -140,7 +141,7 @@ public class AgreementSpecification {
    * If true, this agreement specification is a grouping of other agreement specifications. The list of bundled agreement specifications is provided by the specificationRelationship property
    * @return isBundle
   **/
-  //@ApiModelProperty(value = "If true, this agreement specification is a grouping of other agreement specifications. The list of bundled agreement specifications is provided by the specificationRelationship property")
+  @ApiModelProperty(value = "If true, this agreement specification is a grouping of other agreement specifications. The list of bundled agreement specifications is provided by the specificationRelationship property")
   public Boolean isIsBundle() {
     return isBundle;
   }
@@ -149,7 +150,7 @@ public class AgreementSpecification {
     this.isBundle = isBundle;
   }
 
-  public AgreementSpecification lastUpdate(String lastUpdate) {
+  public AgreementSpecification lastUpdate(OffsetDateTime lastUpdate) {
     this.lastUpdate = lastUpdate;
     return this;
   }
@@ -158,12 +159,12 @@ public class AgreementSpecification {
    * Date and time of the last update
    * @return lastUpdate
   **/
-  //@ApiModelProperty(value = "Date and time of the last update")
-  public String getLastUpdate() {
+  @ApiModelProperty(value = "Date and time of the last update")
+  public OffsetDateTime getLastUpdate() {
     return lastUpdate;
   }
 
-  public void setLastUpdate(String lastUpdate) {
+  public void setLastUpdate(OffsetDateTime lastUpdate) {
     this.lastUpdate = lastUpdate;
   }
 
@@ -176,7 +177,7 @@ public class AgreementSpecification {
    * Indicates the current lifecycle status
    * @return lifecycleStatus
   **/
-  //@ApiModelProperty(value = "Indicates the current lifecycle status")
+  @ApiModelProperty(value = "Indicates the current lifecycle status")
   public String getLifecycleStatus() {
     return lifecycleStatus;
   }
@@ -194,7 +195,7 @@ public class AgreementSpecification {
    * Name of the agreement specification
    * @return name
   **/
-  //@ApiModelProperty(required = true, value = "Name of the agreement specification")
+  @ApiModelProperty(required = true, value = "Name of the agreement specification")
   public String getName() {
     return name;
   }
@@ -212,7 +213,7 @@ public class AgreementSpecification {
    * Agreement specification version
    * @return version
   **/
-  //@ApiModelProperty(value = "Agreement specification version")
+  @ApiModelProperty(value = "Agreement specification version")
   public String getVersion() {
     return version;
   }
@@ -235,7 +236,7 @@ public class AgreementSpecification {
    * Get attachment
    * @return attachment
   **/
-  //@ApiModelProperty(required = true, value = "")
+  @ApiModelProperty(required = true, value = "")
   public List<AttachmentRefOrValue> getAttachment() {
     return attachment;
   }
@@ -261,7 +262,7 @@ public class AgreementSpecification {
    * Get relatedParty
    * @return relatedParty
   **/
-  //@ApiModelProperty(value = "")
+  @ApiModelProperty(value = "")
   public List<RelatedParty> getRelatedParty() {
     return relatedParty;
   }
@@ -279,7 +280,7 @@ public class AgreementSpecification {
    * Get serviceCategory
    * @return serviceCategory
   **/
-  //@ApiModelProperty(value = "")
+  @ApiModelProperty(value = "")
   public CategoryRef getServiceCategory() {
     return serviceCategory;
   }
@@ -305,7 +306,7 @@ public class AgreementSpecification {
    * Get specificationCharacteristic
    * @return specificationCharacteristic
   **/
-  //@ApiModelProperty(value = "")
+  @ApiModelProperty(value = "")
   public List<AgreementSpecCharacteristic> getSpecificationCharacteristic() {
     return specificationCharacteristic;
   }
@@ -331,7 +332,7 @@ public class AgreementSpecification {
    * Get specificationRelationship
    * @return specificationRelationship
   **/
-  //@ApiModelProperty(value = "")
+  @ApiModelProperty(value = "")
   public List<AgreementSpecificationRelationship> getSpecificationRelationship() {
     return specificationRelationship;
   }
@@ -349,7 +350,7 @@ public class AgreementSpecification {
    * The period for which the agreement specification is valid
    * @return validFor
   **/
-  //@ApiModelProperty(value = "The period for which the agreement specification is valid")
+  @ApiModelProperty(value = "The period for which the agreement specification is valid")
   public TimePeriod getValidFor() {
     return validFor;
   }
@@ -367,7 +368,7 @@ public class AgreementSpecification {
    * When sub-classing, this defines the super-class
    * @return baseType
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the super-class")
+  @ApiModelProperty(value = "When sub-classing, this defines the super-class")
   public String getBaseType() {
     return baseType;
   }
@@ -385,7 +386,7 @@ public class AgreementSpecification {
    * A URI to a JSON-Schema file that defines additional attributes and relationships
    * @return schemaLocation
   **/
-  //@ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
+  @ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
   public String getSchemaLocation() {
     return schemaLocation;
   }
@@ -403,7 +404,7 @@ public class AgreementSpecification {
    * When sub-classing, this defines the sub-class entity name
    * @return type
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
+  @ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
   public String getType() {
     return type;
   }

@@ -42,7 +42,7 @@ public class EventSubscription {
    * Id of the listener
    * @return id
   **/
-  //@ApiModelProperty(required = true, value = "Id of the listener")
+  @ApiModelProperty(required = true, value = "Id of the listener")
   public String getId() {
     return id;
   }
@@ -60,7 +60,7 @@ public class EventSubscription {
    * The callback being registered.
    * @return callback
   **/
-  //@ApiModelProperty(required = true, value = "The callback being registered.")
+  @ApiModelProperty(required = true, value = "The callback being registered.")
   public String getCallback() {
     return callback;
   }
@@ -78,7 +78,7 @@ public class EventSubscription {
    * additional data to be passed
    * @return query
   **/
-  //@ApiModelProperty(value = "additional data to be passed")
+  @ApiModelProperty(value = "additional data to be passed")
   public String getQuery() {
     return query;
   }

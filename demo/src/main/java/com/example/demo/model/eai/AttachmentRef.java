@@ -60,7 +60,7 @@ public class AttachmentRef {
    * Unique-Identifier for this attachment
    * @return id
   **/
-  //@ApiModelProperty(required = true, value = "Unique-Identifier for this attachment")
+  @ApiModelProperty(required = true, value = "Unique-Identifier for this attachment")
   public String getId() {
     return id;
   }
@@ -78,7 +78,7 @@ public class AttachmentRef {
    * URL serving as reference for the attachment resource
    * @return href
   **/
-  //@ApiModelProperty(value = "URL serving as reference for the attachment resource")
+  @ApiModelProperty(value = "URL serving as reference for the attachment resource")
   public String getHref() {
     return href;
   }
@@ -96,7 +96,7 @@ public class AttachmentRef {
    * A narrative text describing the content of the attachment
    * @return description
   **/
-  //@ApiModelProperty(value = "A narrative text describing the content of the attachment")
+  @ApiModelProperty(value = "A narrative text describing the content of the attachment")
   public String getDescription() {
     return description;
   }
@@ -114,7 +114,7 @@ public class AttachmentRef {
    * Name of the related entity.
    * @return name
   **/
-  //@ApiModelProperty(value = "Name of the related entity.")
+  @ApiModelProperty(value = "Name of the related entity.")
   public String getName() {
     return name;
   }
@@ -132,7 +132,7 @@ public class AttachmentRef {
    * Link to the attachment media/content
    * @return url
   **/
-  //@ApiModelProperty(value = "Link to the attachment media/content")
+  @ApiModelProperty(value = "Link to the attachment media/content")
   public String getUrl() {
     return url;
   }
@@ -150,7 +150,7 @@ public class AttachmentRef {
    * When sub-classing, this defines the super-class
    * @return baseType
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the super-class")
+  @ApiModelProperty(value = "When sub-classing, this defines the super-class")
   public String getBaseType() {
     return baseType;
   }
@@ -168,7 +168,7 @@ public class AttachmentRef {
    * A URI to a JSON-Schema file that defines additional attributes and relationships
    * @return schemaLocation
   **/
-  //@ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
+  @ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
   public String getSchemaLocation() {
     return schemaLocation;
   }
@@ -186,7 +186,7 @@ public class AttachmentRef {
    * When sub-classing, this defines the sub-class entity name
    * @return type
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
+  @ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
   public String getType() {
     return type;
   }
@@ -204,7 +204,7 @@ public class AttachmentRef {
    * The actual type of the target instance when needed for disambiguation.
    * @return referredType
   **/
-  //@ApiModelProperty(value = "The actual type of the target instance when needed for disambiguation.")
+  @ApiModelProperty(value = "The actual type of the target instance when needed for disambiguation.")
   public String getReferredType() {
     return referredType;
   }

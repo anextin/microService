@@ -60,7 +60,7 @@ public class AgreementSpecificationRelationship {
    * Unique identifier of a related entity.
    * @return id
   **/
-  //@ApiModelProperty(value = "Unique identifier of a related entity.")
+  @ApiModelProperty(value = "Unique identifier of a related entity.")
   public String getId() {
     return id;
   }
@@ -78,7 +78,7 @@ public class AgreementSpecificationRelationship {
    * Reference of the related entity.
    * @return href
   **/
-  //@ApiModelProperty(value = "Reference of the related entity.")
+  @ApiModelProperty(value = "Reference of the related entity.")
   public String getHref() {
     return href;
   }
@@ -96,7 +96,7 @@ public class AgreementSpecificationRelationship {
    * Name of the related entity.
    * @return name
   **/
-  //@ApiModelProperty(value = "Name of the related entity.")
+  @ApiModelProperty(value = "Name of the related entity.")
   public String getName() {
     return name;
   }
@@ -114,7 +114,7 @@ public class AgreementSpecificationRelationship {
    * Type of relationship such as, substitution or dependency.
    * @return relationshipType
   **/
-  //@ApiModelProperty(value = "Type of relationship such as, substitution or dependency.")
+  @ApiModelProperty(value = "Type of relationship such as, substitution or dependency.")
   public String getRelationshipType() {
     return relationshipType;
   }
@@ -132,7 +132,7 @@ public class AgreementSpecificationRelationship {
    * The period for which the relationship is valid
    * @return validFor
   **/
-  //@ApiModelProperty(value = "The period for which the relationship is valid")
+  @ApiModelProperty(value = "The period for which the relationship is valid")
   public TimePeriod getValidFor() {
     return validFor;
   }
@@ -150,7 +150,7 @@ public class AgreementSpecificationRelationship {
    * When sub-classing, this defines the super-class
    * @return baseType
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the super-class")
+  @ApiModelProperty(value = "When sub-classing, this defines the super-class")
   public String getBaseType() {
     return baseType;
   }
@@ -168,7 +168,7 @@ public class AgreementSpecificationRelationship {
    * A URI to a JSON-Schema file that defines additional attributes and relationships
    * @return schemaLocation
   **/
-  //@ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
+  @ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
   public String getSchemaLocation() {
     return schemaLocation;
   }
@@ -186,7 +186,7 @@ public class AgreementSpecificationRelationship {
    * When sub-classing, this defines the sub-class entity name
    * @return type
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
+  @ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
   public String getType() {
     return type;
   }
@@ -204,7 +204,7 @@ public class AgreementSpecificationRelationship {
    * The actual type of the target instance when needed for disambiguation.
    * @return referredType
   **/
-  //@ApiModelProperty(value = "The actual type of the target instance when needed for disambiguation.")
+  @ApiModelProperty(value = "The actual type of the target instance when needed for disambiguation.")
   public String getReferredType() {
     return referredType;
   }

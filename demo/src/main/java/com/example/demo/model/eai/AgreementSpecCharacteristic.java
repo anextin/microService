@@ -62,7 +62,7 @@ public class AgreementSpecCharacteristic {
    * If true, the Boolean indicates that the characteristic is configurable
    * @return configurable
   **/
-  //@ApiModelProperty(value = "If true, the Boolean indicates that the characteristic is configurable")
+  @ApiModelProperty(value = "If true, the Boolean indicates that the characteristic is configurable")
   public Boolean isConfigurable() {
     return configurable;
   }
@@ -80,7 +80,7 @@ public class AgreementSpecCharacteristic {
    * A narrative that explains in detail what the characteristic is
    * @return description
   **/
-  //@ApiModelProperty(value = "A narrative that explains in detail what the characteristic is")
+  @ApiModelProperty(value = "A narrative that explains in detail what the characteristic is")
   public String getDescription() {
     return description;
   }
@@ -98,7 +98,7 @@ public class AgreementSpecCharacteristic {
    * Name of the characteristic being specified.
    * @return name
   **/
-  //@ApiModelProperty(value = "Name of the characteristic being specified.")
+  @ApiModelProperty(value = "Name of the characteristic being specified.")
   public String getName() {
     return name;
   }
@@ -116,7 +116,7 @@ public class AgreementSpecCharacteristic {
    * A kind of value that the characteristic can take on, such as numeric, text and so forth
    * @return valueType
   **/
-  //@ApiModelProperty(value = "A kind of value that the characteristic can take on, such as numeric, text and so forth")
+  @ApiModelProperty(value = "A kind of value that the characteristic can take on, such as numeric, text and so forth")
   public String getValueType() {
     return valueType;
   }
@@ -142,7 +142,7 @@ public class AgreementSpecCharacteristic {
    * Get specCharacteristicValue
    * @return specCharacteristicValue
   **/
-  //@ApiModelProperty(value = "")
+  @ApiModelProperty(value = "")
   public List<AgreementSpecCharacteristicValue> getSpecCharacteristicValue() {
     return specCharacteristicValue;
   }
@@ -160,7 +160,7 @@ public class AgreementSpecCharacteristic {
    * The period for which the specification characteristic is valid
    * @return validFor
   **/
-  //@ApiModelProperty(value = "The period for which the specification characteristic is valid")
+  @ApiModelProperty(value = "The period for which the specification characteristic is valid")
   public TimePeriod getValidFor() {
     return validFor;
   }
@@ -178,7 +178,7 @@ public class AgreementSpecCharacteristic {
    * When sub-classing, this defines the super-class
    * @return baseType
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the super-class")
+  @ApiModelProperty(value = "When sub-classing, this defines the super-class")
   public String getBaseType() {
     return baseType;
   }
@@ -196,7 +196,7 @@ public class AgreementSpecCharacteristic {
    * A URI to a JSON-Schema file that defines additional attributes and relationships
    * @return schemaLocation
   **/
-  //@ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
+  @ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
   public String getSchemaLocation() {
     return schemaLocation;
   }
@@ -214,7 +214,7 @@ public class AgreementSpecCharacteristic {
    * When sub-classing, this defines the sub-class entity name
    * @return type
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
+  @ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
   public String getType() {
     return type;
   }

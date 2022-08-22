@@ -16,8 +16,10 @@ package com.example.demo.model.eai;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.validation.annotation.Validated;
 
+import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * An agreement represents a contract or arrangement, either written or verbal and sometimes enforceable by law, such as a service level agreement or a customer price agreement. An agreement involves a number of other business entities, such as products, services, and resources and/or their specifications. Skipped properties: id,href
@@ -25,28 +27,6 @@ import java.util.List;
 @Validated
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2022-08-22T11:43:31.605Z")
 public class AgreementCreate {
-  public AgreementCreate(String agreementType, String description, Integer documentNumber, String initialDate, String name, String statementOfIntent, String status, String version, List<AgreementAuthorization> agreementAuthorization, List<AgreementItem> agreementItem, TimePeriod agreementPeriod, AgreementSpecificationRef agreementSpecification, List<AgreementRef> associatedAgreement, List<Characteristic> characteristic, TimePeriod completionDate, List<RelatedParty> engagedParty, String baseType, String schemaLocation, String type) {
-    this.agreementType = agreementType;
-    this.description = description;
-    this.documentNumber = documentNumber;
-    this.initialDate = initialDate;
-    this.name = name;
-    this.statementOfIntent = statementOfIntent;
-    this.status = status;
-    this.version = version;
-    this.agreementAuthorization = agreementAuthorization;
-    this.agreementItem = agreementItem;
-    this.agreementPeriod = agreementPeriod;
-    this.agreementSpecification = agreementSpecification;
-    this.associatedAgreement = associatedAgreement;
-    this.characteristic = characteristic;
-    this.completionDate = completionDate;
-    this.engagedParty = engagedParty;
-    this.baseType = baseType;
-    this.schemaLocation = schemaLocation;
-    this.type = type;
-  }
-
   @JsonProperty("agreementType")
   private String agreementType = null;
 
@@ -57,7 +37,7 @@ public class AgreementCreate {
   private Integer documentNumber = null;
 
   @JsonProperty("initialDate")
-  private String initialDate = null;
+  private OffsetDateTime initialDate = null;
 
   @JsonProperty("name")
   private String name = null;
@@ -104,6 +84,16 @@ public class AgreementCreate {
   @JsonProperty("@type")
   private String type = null;
 
+  public AgreementCreate agreementType(String agreementType) {
+    this.agreementType = agreementType;
+    return this;
+  }
+
+   /**
+   * The type of the agreement. For example commercial
+   * @return agreementType
+  **/
+  @ApiModelProperty(required = true, value = "The type of the agreement. For example commercial")
   public String getAgreementType() {
     return agreementType;
   }
@@ -112,6 +102,16 @@ public class AgreementCreate {
     this.agreementType = agreementType;
   }
 
+  public AgreementCreate description(String description) {
+    this.description = description;
+    return this;
+  }
+
+   /**
+   * Narrative that explains the agreement and details about the it , such as why the agreement is taking place.
+   * @return description
+  **/
+  @ApiModelProperty(value = "Narrative that explains the agreement and details about the it , such as why the agreement is taking place.")
   public String getDescription() {
     return description;
   }
@@ -120,6 +120,16 @@ public class AgreementCreate {
     this.description = description;
   }
 
+  public AgreementCreate documentNumber(Integer documentNumber) {
+    this.documentNumber = documentNumber;
+    return this;
+  }
+
+   /**
+   * A reference number assigned to an Agreement that follows a prescribed numbering system.
+   * @return documentNumber
+  **/
+  @ApiModelProperty(value = "A reference number assigned to an Agreement that follows a prescribed numbering system.")
   public Integer getDocumentNumber() {
     return documentNumber;
   }
@@ -128,14 +138,34 @@ public class AgreementCreate {
     this.documentNumber = documentNumber;
   }
 
-  public String getInitialDate() {
+  public AgreementCreate initialDate(OffsetDateTime initialDate) {
+    this.initialDate = initialDate;
+    return this;
+  }
+
+   /**
+   * Date at which the agreement was initialized
+   * @return initialDate
+  **/
+  @ApiModelProperty(value = "Date at which the agreement was initialized")
+  public OffsetDateTime getInitialDate() {
     return initialDate;
   }
 
-  public void setInitialDate(String initialDate) {
+  public void setInitialDate(OffsetDateTime initialDate) {
     this.initialDate = initialDate;
   }
 
+  public AgreementCreate name(String name) {
+    this.name = name;
+    return this;
+  }
+
+   /**
+   * A human-readable name for the agreement
+   * @return name
+  **/
+  @ApiModelProperty(required = true, value = "A human-readable name for the agreement")
   public String getName() {
     return name;
   }
@@ -144,6 +174,16 @@ public class AgreementCreate {
     this.name = name;
   }
 
+  public AgreementCreate statementOfIntent(String statementOfIntent) {
+    this.statementOfIntent = statementOfIntent;
+    return this;
+  }
+
+   /**
+   * An overview and goals of the Agreement
+   * @return statementOfIntent
+  **/
+  @ApiModelProperty(value = "An overview and goals of the Agreement")
   public String getStatementOfIntent() {
     return statementOfIntent;
   }
@@ -152,6 +192,16 @@ public class AgreementCreate {
     this.statementOfIntent = statementOfIntent;
   }
 
+  public AgreementCreate status(String status) {
+    this.status = status;
+    return this;
+  }
+
+   /**
+   * The current status of the agreement. Typical values are: in process, approved and rejected
+   * @return status
+  **/
+  @ApiModelProperty(value = "The current status of the agreement. Typical values are: in process, approved and rejected")
   public String getStatus() {
     return status;
   }
@@ -160,6 +210,16 @@ public class AgreementCreate {
     this.status = status;
   }
 
+  public AgreementCreate version(String version) {
+    this.version = version;
+    return this;
+  }
+
+   /**
+   * A string identifying the version of the agreement
+   * @return version
+  **/
+  @ApiModelProperty(value = "A string identifying the version of the agreement")
   public String getVersion() {
     return version;
   }
@@ -168,6 +228,24 @@ public class AgreementCreate {
     this.version = version;
   }
 
+  public AgreementCreate agreementAuthorization(List<AgreementAuthorization> agreementAuthorization) {
+    this.agreementAuthorization = agreementAuthorization;
+    return this;
+  }
+
+  public AgreementCreate addAgreementAuthorizationItem(AgreementAuthorization agreementAuthorizationItem) {
+    if (this.agreementAuthorization == null) {
+      this.agreementAuthorization = new ArrayList<AgreementAuthorization>();
+    }
+    this.agreementAuthorization.add(agreementAuthorizationItem);
+    return this;
+  }
+
+   /**
+   * Get agreementAuthorization
+   * @return agreementAuthorization
+  **/
+  @ApiModelProperty(value = "")
   public List<AgreementAuthorization> getAgreementAuthorization() {
     return agreementAuthorization;
   }
@@ -176,6 +254,21 @@ public class AgreementCreate {
     this.agreementAuthorization = agreementAuthorization;
   }
 
+  public AgreementCreate agreementItem(List<AgreementItem> agreementItem) {
+    this.agreementItem = agreementItem;
+    return this;
+  }
+
+  public AgreementCreate addAgreementItemItem(AgreementItem agreementItemItem) {
+    this.agreementItem.add(agreementItemItem);
+    return this;
+  }
+
+   /**
+   * Get agreementItem
+   * @return agreementItem
+  **/
+  @ApiModelProperty(required = true, value = "")
   public List<AgreementItem> getAgreementItem() {
     return agreementItem;
   }
@@ -184,6 +277,16 @@ public class AgreementCreate {
     this.agreementItem = agreementItem;
   }
 
+  public AgreementCreate agreementPeriod(TimePeriod agreementPeriod) {
+    this.agreementPeriod = agreementPeriod;
+    return this;
+  }
+
+   /**
+   * The time period during which the Agreement is in effect.
+   * @return agreementPeriod
+  **/
+  @ApiModelProperty(value = "The time period during which the Agreement is in effect.")
   public TimePeriod getAgreementPeriod() {
     return agreementPeriod;
   }
@@ -192,6 +295,16 @@ public class AgreementCreate {
     this.agreementPeriod = agreementPeriod;
   }
 
+  public AgreementCreate agreementSpecification(AgreementSpecificationRef agreementSpecification) {
+    this.agreementSpecification = agreementSpecification;
+    return this;
+  }
+
+   /**
+   * Get agreementSpecification
+   * @return agreementSpecification
+  **/
+  @ApiModelProperty(value = "")
   public AgreementSpecificationRef getAgreementSpecification() {
     return agreementSpecification;
   }
@@ -200,6 +313,24 @@ public class AgreementCreate {
     this.agreementSpecification = agreementSpecification;
   }
 
+  public AgreementCreate associatedAgreement(List<AgreementRef> associatedAgreement) {
+    this.associatedAgreement = associatedAgreement;
+    return this;
+  }
+
+  public AgreementCreate addAssociatedAgreementItem(AgreementRef associatedAgreementItem) {
+    if (this.associatedAgreement == null) {
+      this.associatedAgreement = new ArrayList<AgreementRef>();
+    }
+    this.associatedAgreement.add(associatedAgreementItem);
+    return this;
+  }
+
+   /**
+   * Get associatedAgreement
+   * @return associatedAgreement
+  **/
+  @ApiModelProperty(value = "")
   public List<AgreementRef> getAssociatedAgreement() {
     return associatedAgreement;
   }
@@ -208,6 +339,24 @@ public class AgreementCreate {
     this.associatedAgreement = associatedAgreement;
   }
 
+  public AgreementCreate characteristic(List<Characteristic> characteristic) {
+    this.characteristic = characteristic;
+    return this;
+  }
+
+  public AgreementCreate addCharacteristicItem(Characteristic characteristicItem) {
+    if (this.characteristic == null) {
+      this.characteristic = new ArrayList<Characteristic>();
+    }
+    this.characteristic.add(characteristicItem);
+    return this;
+  }
+
+   /**
+   * Get characteristic
+   * @return characteristic
+  **/
+  @ApiModelProperty(value = "")
   public List<Characteristic> getCharacteristic() {
     return characteristic;
   }
@@ -216,6 +365,16 @@ public class AgreementCreate {
     this.characteristic = characteristic;
   }
 
+  public AgreementCreate completionDate(TimePeriod completionDate) {
+    this.completionDate = completionDate;
+    return this;
+  }
+
+   /**
+   * Date at which the agreement is completed
+   * @return completionDate
+  **/
+  @ApiModelProperty(value = "Date at which the agreement is completed")
   public TimePeriod getCompletionDate() {
     return completionDate;
   }
@@ -224,6 +383,21 @@ public class AgreementCreate {
     this.completionDate = completionDate;
   }
 
+  public AgreementCreate engagedParty(List<RelatedParty> engagedParty) {
+    this.engagedParty = engagedParty;
+    return this;
+  }
+
+  public AgreementCreate addEngagedPartyItem(RelatedParty engagedPartyItem) {
+    this.engagedParty.add(engagedPartyItem);
+    return this;
+  }
+
+   /**
+   * Get engagedParty
+   * @return engagedParty
+  **/
+  @ApiModelProperty(required = true, value = "")
   public List<RelatedParty> getEngagedParty() {
     return engagedParty;
   }
@@ -232,6 +406,16 @@ public class AgreementCreate {
     this.engagedParty = engagedParty;
   }
 
+  public AgreementCreate baseType(String baseType) {
+    this.baseType = baseType;
+    return this;
+  }
+
+   /**
+   * When sub-classing, this defines the super-class
+   * @return baseType
+  **/
+  @ApiModelProperty(value = "When sub-classing, this defines the super-class")
   public String getBaseType() {
     return baseType;
   }
@@ -240,6 +424,16 @@ public class AgreementCreate {
     this.baseType = baseType;
   }
 
+  public AgreementCreate schemaLocation(String schemaLocation) {
+    this.schemaLocation = schemaLocation;
+    return this;
+  }
+
+   /**
+   * A URI to a JSON-Schema file that defines additional attributes and relationships
+   * @return schemaLocation
+  **/
+  @ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
   public String getSchemaLocation() {
     return schemaLocation;
   }
@@ -248,6 +442,16 @@ public class AgreementCreate {
     this.schemaLocation = schemaLocation;
   }
 
+  public AgreementCreate type(String type) {
+    this.type = type;
+    return this;
+  }
+
+   /**
+   * When sub-classing, this defines the sub-class entity name
+   * @return type
+  **/
+  @ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
   public String getType() {
     return type;
   }
@@ -255,5 +459,82 @@ public class AgreementCreate {
   public void setType(String type) {
     this.type = type;
   }
+
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
+    AgreementCreate agreementCreate = (AgreementCreate) o;
+    return Objects.equals(this.agreementType, agreementCreate.agreementType) &&
+        Objects.equals(this.description, agreementCreate.description) &&
+        Objects.equals(this.documentNumber, agreementCreate.documentNumber) &&
+        Objects.equals(this.initialDate, agreementCreate.initialDate) &&
+        Objects.equals(this.name, agreementCreate.name) &&
+        Objects.equals(this.statementOfIntent, agreementCreate.statementOfIntent) &&
+        Objects.equals(this.status, agreementCreate.status) &&
+        Objects.equals(this.version, agreementCreate.version) &&
+        Objects.equals(this.agreementAuthorization, agreementCreate.agreementAuthorization) &&
+        Objects.equals(this.agreementItem, agreementCreate.agreementItem) &&
+        Objects.equals(this.agreementPeriod, agreementCreate.agreementPeriod) &&
+        Objects.equals(this.agreementSpecification, agreementCreate.agreementSpecification) &&
+        Objects.equals(this.associatedAgreement, agreementCreate.associatedAgreement) &&
+        Objects.equals(this.characteristic, agreementCreate.characteristic) &&
+        Objects.equals(this.completionDate, agreementCreate.completionDate) &&
+        Objects.equals(this.engagedParty, agreementCreate.engagedParty) &&
+        Objects.equals(this.baseType, agreementCreate.baseType) &&
+        Objects.equals(this.schemaLocation, agreementCreate.schemaLocation) &&
+        Objects.equals(this.type, agreementCreate.type);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(agreementType, description, documentNumber, initialDate, name, statementOfIntent, status, version, agreementAuthorization, agreementItem, agreementPeriod, agreementSpecification, associatedAgreement, characteristic, completionDate, engagedParty, baseType, schemaLocation, type);
+  }
+
+
+  @Override
+  public String toString() {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class AgreementCreate {\n");
+    
+    sb.append("    agreementType: ").append(toIndentedString(agreementType)).append("\n");
+    sb.append("    description: ").append(toIndentedString(description)).append("\n");
+    sb.append("    documentNumber: ").append(toIndentedString(documentNumber)).append("\n");
+    sb.append("    initialDate: ").append(toIndentedString(initialDate)).append("\n");
+    sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    statementOfIntent: ").append(toIndentedString(statementOfIntent)).append("\n");
+    sb.append("    status: ").append(toIndentedString(status)).append("\n");
+    sb.append("    version: ").append(toIndentedString(version)).append("\n");
+    sb.append("    agreementAuthorization: ").append(toIndentedString(agreementAuthorization)).append("\n");
+    sb.append("    agreementItem: ").append(toIndentedString(agreementItem)).append("\n");
+    sb.append("    agreementPeriod: ").append(toIndentedString(agreementPeriod)).append("\n");
+    sb.append("    agreementSpecification: ").append(toIndentedString(agreementSpecification)).append("\n");
+    sb.append("    associatedAgreement: ").append(toIndentedString(associatedAgreement)).append("\n");
+    sb.append("    characteristic: ").append(toIndentedString(characteristic)).append("\n");
+    sb.append("    completionDate: ").append(toIndentedString(completionDate)).append("\n");
+    sb.append("    engagedParty: ").append(toIndentedString(engagedParty)).append("\n");
+    sb.append("    baseType: ").append(toIndentedString(baseType)).append("\n");
+    sb.append("    schemaLocation: ").append(toIndentedString(schemaLocation)).append("\n");
+    sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
+    if (o == null) {
+      return "null";
+    }
+    return o.toString().replace("\n", "\n    ");
+  }
+
 }
 

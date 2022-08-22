@@ -54,7 +54,7 @@ public class ProductOfferingRef {
    * Unique identifier of a related entity.
    * @return id
   **/
-  //@ApiModelProperty(required = true, value = "Unique identifier of a related entity.")
+  @ApiModelProperty(required = true, value = "Unique identifier of a related entity.")
   public String getId() {
     return id;
   }
@@ -72,7 +72,7 @@ public class ProductOfferingRef {
    * Reference of the related entity.
    * @return href
   **/
-  //@ApiModelProperty(value = "Reference of the related entity.")
+  @ApiModelProperty(value = "Reference of the related entity.")
   public String getHref() {
     return href;
   }
@@ -90,7 +90,7 @@ public class ProductOfferingRef {
    * Name of the related entity.
    * @return name
   **/
-  //@ApiModelProperty(value = "Name of the related entity.")
+  @ApiModelProperty(value = "Name of the related entity.")
   public String getName() {
     return name;
   }
@@ -108,7 +108,7 @@ public class ProductOfferingRef {
    * When sub-classing, this defines the super-class
    * @return baseType
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the super-class")
+  @ApiModelProperty(value = "When sub-classing, this defines the super-class")
   public String getBaseType() {
     return baseType;
   }
@@ -126,7 +126,7 @@ public class ProductOfferingRef {
    * A URI to a JSON-Schema file that defines additional attributes and relationships
    * @return schemaLocation
   **/
-  //@ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
+  @ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
   public String getSchemaLocation() {
     return schemaLocation;
   }
@@ -144,7 +144,7 @@ public class ProductOfferingRef {
    * When sub-classing, this defines the sub-class entity name
    * @return type
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
+  @ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name")
   public String getType() {
     return type;
   }
@@ -162,7 +162,7 @@ public class ProductOfferingRef {
    * The actual type of the target instance when needed for disambiguation.
    * @return referredType
   **/
-  //@ApiModelProperty(value = "The actual type of the target instance when needed for disambiguation.")
+  @ApiModelProperty(value = "The actual type of the target instance when needed for disambiguation.")
   public String getReferredType() {
     return referredType;
   }

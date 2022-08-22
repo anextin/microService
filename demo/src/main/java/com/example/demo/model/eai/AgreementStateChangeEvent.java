@@ -16,13 +16,14 @@ package com.example.demo.model.eai;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.validation.annotation.Validated;
 
+import java.time.OffsetDateTime;
 import java.util.Objects;
 
 /**
  * The notification data structure
  */
 @Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2022-08-22T11:43:31.605Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2022-08-22T11:43:31.605Z")
 public class AgreementStateChangeEvent {
   @JsonProperty("id")
   private String id = null;
@@ -34,7 +35,7 @@ public class AgreementStateChangeEvent {
   private String eventId = null;
 
   @JsonProperty("eventTime")
-  private String eventTime = null;
+  private OffsetDateTime eventTime = null;
 
   @JsonProperty("eventType")
   private String eventType = null;
@@ -55,7 +56,7 @@ public class AgreementStateChangeEvent {
   private String priority = null;
 
   @JsonProperty("timeOcurred")
-  private String timeOcurred = null;
+  private OffsetDateTime timeOcurred = null;
 
   @JsonProperty("event")
   private AgreementStateChangeEventPayload event = null;
@@ -69,7 +70,7 @@ public class AgreementStateChangeEvent {
    * Identifier of the resource involved in the event
    * @return id
   **/
-  //@ApiModelProperty(value = "Identifier of the resource involved in the event")
+  @ApiModelProperty(value = "Identifier of the resource involved in the event")
   public String getId() {
     return id;
   }
@@ -87,7 +88,7 @@ public class AgreementStateChangeEvent {
    * Reference of the resource involved in the event
    * @return href
   **/
-  //@ApiModelProperty(value = "Reference of the resource involved in the event")
+  @ApiModelProperty(value = "Reference of the resource involved in the event")
   public String getHref() {
     return href;
   }
@@ -105,7 +106,7 @@ public class AgreementStateChangeEvent {
    * The identifier of the notification.
    * @return eventId
   **/
-  //@ApiModelProperty(value = "The identifier of the notification.")
+  @ApiModelProperty(value = "The identifier of the notification.")
   public String getEventId() {
     return eventId;
   }
@@ -114,7 +115,7 @@ public class AgreementStateChangeEvent {
     this.eventId = eventId;
   }
 
-  public AgreementStateChangeEvent eventTime(String eventTime) {
+  public AgreementStateChangeEvent eventTime(OffsetDateTime eventTime) {
     this.eventTime = eventTime;
     return this;
   }
@@ -123,12 +124,12 @@ public class AgreementStateChangeEvent {
    * Time of the event occurrence.
    * @return eventTime
   **/
-  //@ApiModelProperty(value = "Time of the event occurrence.")
-  public String getEventTime() {
+  @ApiModelProperty(value = "Time of the event occurrence.")
+  public OffsetDateTime getEventTime() {
     return eventTime;
   }
 
-  public void setEventTime(String eventTime) {
+  public void setEventTime(OffsetDateTime eventTime) {
     this.eventTime = eventTime;
   }
 
@@ -141,7 +142,7 @@ public class AgreementStateChangeEvent {
    * The type of the notification.
    * @return eventType
   **/
-  //@ApiModelProperty(value = "The type of the notification.")
+  @ApiModelProperty(value = "The type of the notification.")
   public String getEventType() {
     return eventType;
   }
@@ -159,7 +160,7 @@ public class AgreementStateChangeEvent {
    * The correlation id for this event.
    * @return correlationId
   **/
-  //@ApiModelProperty(value = "The correlation id for this event.")
+  @ApiModelProperty(value = "The correlation id for this event.")
   public String getCorrelationId() {
     return correlationId;
   }
@@ -177,7 +178,7 @@ public class AgreementStateChangeEvent {
    * The domain of the event.
    * @return domain
   **/
-  //@ApiModelProperty(value = "The domain of the event.")
+  @ApiModelProperty(value = "The domain of the event.")
   public String getDomain() {
     return domain;
   }
@@ -195,7 +196,7 @@ public class AgreementStateChangeEvent {
    * The title of the event.
    * @return title
   **/
-  //@ApiModelProperty(value = "The title of the event.")
+  @ApiModelProperty(value = "The title of the event.")
   public String getTitle() {
     return title;
   }
@@ -213,7 +214,7 @@ public class AgreementStateChangeEvent {
    * An explanatory of the event.
    * @return description
   **/
-  //@ApiModelProperty(value = "An explanatory of the event.")
+  @ApiModelProperty(value = "An explanatory of the event.")
   public String getDescription() {
     return description;
   }
@@ -231,7 +232,7 @@ public class AgreementStateChangeEvent {
    * A priority.
    * @return priority
   **/
-  //@ApiModelProperty(value = "A priority.")
+  @ApiModelProperty(value = "A priority.")
   public String getPriority() {
     return priority;
   }
@@ -240,7 +241,7 @@ public class AgreementStateChangeEvent {
     this.priority = priority;
   }
 
-  public AgreementStateChangeEvent timeOcurred(String timeOcurred) {
+  public AgreementStateChangeEvent timeOcurred(OffsetDateTime timeOcurred) {
     this.timeOcurred = timeOcurred;
     return this;
   }
@@ -249,12 +250,12 @@ public class AgreementStateChangeEvent {
    * The time the event occured.
    * @return timeOcurred
   **/
-  //@ApiModelProperty(value = "The time the event occured.")
-  public String getTimeOcurred() {
+  @ApiModelProperty(value = "The time the event occured.")
+  public OffsetDateTime getTimeOcurred() {
     return timeOcurred;
   }
 
-  public void setTimeOcurred(String timeOcurred) {
+  public void setTimeOcurred(OffsetDateTime timeOcurred) {
     this.timeOcurred = timeOcurred;
   }
 
@@ -267,7 +268,7 @@ public class AgreementStateChangeEvent {
    * The event payload linked to the involved resource object
    * @return event
   **/
-  //@ApiModelProperty(value = "The event payload linked to the involved resource object")
+  @ApiModelProperty(value = "The event payload linked to the involved resource object")
   public AgreementStateChangeEventPayload getEvent() {
     return event;
   }

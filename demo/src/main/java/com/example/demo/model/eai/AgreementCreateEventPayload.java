@@ -36,7 +36,7 @@ public class AgreementCreateEventPayload {
    * The involved resource data for the event
    * @return agreement
   **/
-  //@ApiModelProperty(value = "The involved resource data for the event")
+  @ApiModelProperty(value = "The involved resource data for the event")
   public Agreement getAgreement() {
     return agreement;
   }

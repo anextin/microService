@@ -57,7 +57,7 @@ public class Error {
    * Application relevant detail, defined in the API or a common list.
    * @return code
   **/
-  //@ApiModelProperty(required = true, value = "Application relevant detail, defined in the API or a common list.")
+  @ApiModelProperty(required = true, value = "Application relevant detail, defined in the API or a common list.")
   public String getCode() {
     return code;
   }
@@ -75,7 +75,7 @@ public class Error {
    * Explanation of the reason for the error which can be shown to a client user.
    * @return reason
   **/
-  //@ApiModelProperty(required = true, value = "Explanation of the reason for the error which can be shown to a client user.")
+  @ApiModelProperty(required = true, value = "Explanation of the reason for the error which can be shown to a client user.")
   public String getReason() {
     return reason;
   }
@@ -93,7 +93,7 @@ public class Error {
    * More details and corrective actions related to the error which can be shown to a client user.
    * @return message
   **/
-  //@ApiModelProperty(value = "More details and corrective actions related to the error which can be shown to a client user.")
+  @ApiModelProperty(value = "More details and corrective actions related to the error which can be shown to a client user.")
   public String getMessage() {
     return message;
   }
@@ -111,7 +111,7 @@ public class Error {
    * HTTP Error code extension
    * @return status
   **/
-  //@ApiModelProperty(value = "HTTP Error code extension")
+  @ApiModelProperty(value = "HTTP Error code extension")
   public String getStatus() {
     return status;
   }
@@ -129,7 +129,7 @@ public class Error {
    * URI of documentation describing the error.
    * @return referenceError
   **/
-  //@ApiModelProperty(value = "URI of documentation describing the error.")
+  @ApiModelProperty(value = "URI of documentation describing the error.")
   public String getReferenceError() {
     return referenceError;
   }
@@ -147,7 +147,7 @@ public class Error {
    * When sub-classing, this defines the super-class.
    * @return baseType
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the super-class.")
+  @ApiModelProperty(value = "When sub-classing, this defines the super-class.")
   public String getBaseType() {
     return baseType;
   }
@@ -165,7 +165,7 @@ public class Error {
    * A URI to a JSON-Schema file that defines additional attributes and relationships
    * @return schemaLocation
   **/
-  //@ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
+  @ApiModelProperty(value = "A URI to a JSON-Schema file that defines additional attributes and relationships")
   public String getSchemaLocation() {
     return schemaLocation;
   }
@@ -183,7 +183,7 @@ public class Error {
    * When sub-classing, this defines the sub-class entity name.
    * @return type
   **/
-  //@ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name.")
+  @ApiModelProperty(value = "When sub-classing, this defines the sub-class entity name.")
   public String getType() {
     return type;
   }

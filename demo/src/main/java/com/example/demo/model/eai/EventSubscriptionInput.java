@@ -39,7 +39,7 @@ public class EventSubscriptionInput {
    * The callback being registered.
    * @return callback
   **/
-  //@ApiModelProperty(required = true, value = "The callback being registered.")
+  @ApiModelProperty(required = true, value = "The callback being registered.")
   public String getCallback() {
     return callback;
   }
@@ -57,7 +57,7 @@ public class EventSubscriptionInput {
    * additional data to be passed
    * @return query
   **/
-  //@ApiModelProperty(value = "additional data to be passed")
+  @ApiModelProperty(value = "additional data to be passed")
   public String getQuery() {
     return query;
   }

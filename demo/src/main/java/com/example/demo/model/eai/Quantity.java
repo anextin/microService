@@ -39,7 +39,7 @@ public class Quantity {
    * Numeric value in a given unit
    * @return amount
   **/
-  //@ApiModelProperty(value = "Numeric value in a given unit")
+  @ApiModelProperty(value = "Numeric value in a given unit")
   public Float getAmount() {
     return amount;
   }
@@ -57,7 +57,7 @@ public class Quantity {
    * Unit
    * @return units
   **/
-  //@ApiModelProperty(value = "Unit")
+  @ApiModelProperty(value = "Unit")
   public String getUnits() {
     return units;
   }
